@@ -22,6 +22,7 @@ const Home = () => {
     }, [dispatch])
 
     console.log(  "process.env.REACT_APP_PROXY_HOST " + process.env.REACT_APP_PROXY_HOST)
+    console.log(  "test " + process.env.TEST)
 
     return (
         <div className="home">
