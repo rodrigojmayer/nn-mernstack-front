@@ -7,7 +7,7 @@ const WorkoutDetails = ({ workout }) => {
     const { dispatch } = useWorkoutsContext()
 
     const handleClick = async () => {
-        const response = await fetch('/api/workouts/' + workout._id, {
+        const response = await fetch('https://mern-task-app-api-nvn3.onrender.com/api/workouts/' + workout._id, {
             method: 'DELETE'
         })
         const json = await response.json()
