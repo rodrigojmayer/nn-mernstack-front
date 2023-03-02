@@ -21,6 +21,8 @@ const Home = () => {
         fetchWorkouts()
     }, [dispatch])
 
+    console.log(  "process.env.REACT_APP_PROXY_HOST " + process.env.REACT_APP_PROXY_HOST)
+
     return (
         <div className="home">
             <div className="workouts">
